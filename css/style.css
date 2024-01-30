@@ -3,6 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@700&display=swap');
 
+/*
+app colors
+#E5A3A3
+#B4CC9F
+#8FBBCC
+#FFCD7B
+*/
+
 html{
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
@@ -11,4 +19,92 @@ html{
     /*14px*/
     color: #222;
     font-family: 'Noto Sans JP', sans-serif;
+}
+
+a{
+    color: #222;
+    text-decoration: none;
+}
+
+.mvis{
+/*    height: 100vh;*/
+}
+
+.mcon{
+    margin: auto;
+    width: 80%;
+}
+
+.card--wrap{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card__jump{
+    width: 20%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 200px;
+
+    padding: 20px 25px;
+
+    border-radius: 20px;
+    border: 3px solid #eee;
+    box-sizing: content-box;
+    background: #eee;
+}
+
+.card__header{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.card__title{
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+
+    margin-bottom: 5px;
+}
+
+.card__sub{
+    color: #666;
+}
+
+.card__body{
+    height: 60%;
+
+/*    text-align: justify;*/
+
+    line-height: 1.4rem;
+}
+
+.card__footer{
+    opacity: 0;
+    transform: translateX(-8%);
+
+    justify-self: flex-end;
+    align-self: flex-end;
+
+    font-weight: 700;
+}
+
+.card__jump:hover .card__footer{
+    opacity: 1;
+    transform: translateX(0);
+    transition: 200ms ease-out;
+}
+
+.card__jump:hover .card{
+    background: #fff;
+    border-color: #eee;
+}
+
+.card__jump:nth-child(1):hover .card__title--home{
+
 }

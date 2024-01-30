@@ -2,7 +2,11 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale-1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>LifeMode | ライフモード</title>
+    <meta>
 </head>
 <body>
 <div class="wrap">
@@ -13,60 +17,111 @@
         <img src="" alt="" class="mvis__img--phone2">
     </div>
     <main class="mcon">
-        <div class="wrap--card">
-            <a href="" class="card__jump">
+        <div class="card--wrap">
+            <a href="#home" class="card__jump">
                <article class="card">
                     <header class="card__header">
-                        <h2 class="card__title"></h2>
-                        <h3 class="card__sub"></h3>
+                        <h2 class="card__title card__title--home">home</h2>
+                        <h3 class="card__sub">ホーム</h3>
                     </header>
                     <div class="card__body">
-                        <p class="card__copy"></p>
+                        <p class="card__copy">一目で今日、今週、今月の進行状況が確認できるホーム画面。</p>
                     </div>
-                    <footer class="card__footer"></footer>
+                    <footer class="card__footer">Learn more &rarr;</footer>
                 </article>
             </a>
-            <a href="" class="card__jump">
+            <a href="#goals" class="card__jump">
                <article class="card">
                     <header class="card__header">
-                        <h2 class="card__title"></h2>
-                        <h3 class="card__sub"></h3>
+                        <h2 class="card__title">goals</h2>
+                        <h3 class="card__sub">ゴール</h3>
                     </header>
                     <div class="card__body">
-                        <p class="card__copy"></p>
+                        <p class="card__copy">ホーム画面より幅広い範囲でゴールの進行データが表示されている。ゴール設定や管理することもできる。</p>
                     </div>
-                    <footer class="card__footer"></footer>
+                    <footer class="card__footer">Learn more &rarr;</footer>
                 </article>
             </a>
-            <a href="" class="card__jump">
+            <a href="#todo" class="card__jump">
                <article class="card">
                     <header class="card__header">
-                        <h2 class="card__title"></h2>
-                        <h3 class="card__sub"></h3>
+                        <h2 class="card__title">todo</h2>
+                        <h3 class="card__sub">タスク</h3>
                     </header>
                     <div class="card__body">
-                        <p class="card__copy"></p>
+                        <p class="card__copy">今日にやることが分かるようにタスクが予定日順で並んでいる。タスクを作成する場合は詳細までカスタマイズできる。</p>
                     </div>
-                    <footer class="card__footer"></footer>
+                    <footer class="card__footer">Learn more &rarr;</footer>
                 </article>
             </a>
-            <a href="" class="card__jump">
+            <a href="#timer" class="card__jump">
                <article class="card">
                     <header class="card__header">
-                        <h2 class="card__title"></h2>
-                        <h3 class="card__sub"></h3>
+                        <h2 class="card__title">timer</h2>
+                        <h3 class="card__sub">タイマー</h3>
                     </header>
                     <div class="card__body">
-                        <p class="card__copy"></p>
+                        <p class="card__copy">Todoにより集中できるようなタイマー。プリセットの機能で色々なフローに安く入る。</p>
                     </div>
-                    <footer class="card__footer"></footer>
+                    <footer class="card__footer">Learn more &rarr;</footer>
                 </article>
             </a>
         </div>
-        div.feature#featuregoeshere>header.feature__header>h2.feature__title^+div.feature__body>img.feature__img+p.feature__copy
+        <div class="feature" id="#home">
+            <header class="feature__header">
+                <h2 class="feature__title"></h2>
+            </header>
+            <div class="feature__body">
+                <img src="" alt="" class="feature__img">
+                <p class="feature__copy"></p>
+            </div>
+        </div>
+        <div class="feature" id="#goals">
+            <header class="feature__header">
+                <h2 class="feature__title"></h2>
+            </header>
+            <div class="feature__body">
+                <img src="" alt="" class="feature__img">
+                <p class="feature__copy"></p>
+            </div>
+        </div>
+        <div class="feature" id="#todo">
+            <header class="feature__header">
+                <h2 class="feature__title"></h2>
+            </header>
+            <div class="feature__body">
+                <img src="" alt="" class="feature__img">
+                <p class="feature__copy"></p>
+            </div>
+        </div>
+        <div class="feature" id="#timer">
+            <header class="feature__header">
+                <h2 class="feature__title"></h2>
+            </header>
+            <div class="feature__body">
+                <img src="" alt="" class="feature__img">
+                <p class="feature__copy"></p>
+            </div>
+        </div>
     </main>
     div.prefoot>h1.prefoot__header
     footer.footer>div.footer__left>img.footer__logo+p.footer__txt^+div.footer__right>(ul.footer__list>li.footer__item>h3.footer__head^+(li.footer__item>a.footer__link>p.footer__txt)*5)*2
 </div>
+<!--
+BOARD TXT
+今日から自分のライフを取り戻す。「イマ」と「ヤリタイコト」を中心にした自己管理アプリ。Todo（タスク）、ゴール設定、タイマーといった不可欠な機能を完備しています。
+
+GOAL
+達成したゴール数が確認でき、モチベーションアップ！
+ゴール作成その１。ゴール自体と予定日を設定。
+ゴール作成その２。ゴールにTodo（タスク）を追加。
+ゴール作成その３。ゴール作成が完成。
+
+TOOD
+Todo（タスク）が予定日順で並んでいます。ゴールに追加、サブタスクの作成といったオプションもあります。
+
+TIMER
+Todo（タスク）に集中できるようなタイマー。設定画面でタイマー終了時のサウンドとプリセットが変更できます。
+-->
 </body>
 </html>
