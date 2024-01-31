@@ -3,14 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@700&display=swap');
 
-/*
-app colors
-#E5A3A3
-#B4CC9F
-#8FBBCC
-#FFCD7B
-
-bg
+/*bg
 #A3BCE2
 */
 
@@ -33,6 +26,22 @@ body{
 /*    background: linear-gradient(#A3BCE2 0% 100vh, transparent 100vh 100%);*/
 }
 
+.home{
+    color: #E5A3A3;
+}
+
+.goals{
+    color: #B4CC9F;
+}
+
+.todo{
+    color: #8FBBCC;
+}
+
+.timer{
+    color: #FFCD7B;
+}
+
 .mvis{
     display: flex;
     justify-content: space-between;
@@ -52,15 +61,28 @@ body{
     align-items: center;
 
     height: 100%;
-    width: 50%;
+    width: 55%;
 }
 
 .mvis__head{
     font-size: 4rem;
     font-weight: 400;
-    letter-spacing: .2rem;
 
     height: 10%;
+    line-height: 5rem;
+
+    user-select: none;
+}
+
+.hilite{
+    background: #E5A3A3;
+    color: #fff;
+
+    font-weight: 700;
+    letter-spacing: .2rem;
+
+    padding: 0 10px;
+    overflow: hidden;
 }
 
 .mvis__img--wrap{
@@ -104,6 +126,8 @@ body{
     justify-content: space-around;
     align-items: flex-end;
 
+    align-self: center;
+
     width: 50%;
 }
 
@@ -125,7 +149,7 @@ body{
 }
 
 .mcon{
-    margin: 100px auto;
+    margin: 200px auto;
     width: 80%;
 }
 
@@ -153,6 +177,8 @@ body{
     border: 3px solid #eee;
     box-sizing: content-box;
     background: #eee;
+
+    transition: background 200ms;
 }
 
 .card__header{
@@ -165,6 +191,8 @@ body{
     letter-spacing: .1rem;
 
     margin-bottom: 5px;
+
+    transition: color 200ms;
 }
 
 .card__sub{
@@ -198,8 +226,181 @@ body{
 .card__jump:hover .card{
     background: #fff;
     border-color: #eee;
+
+    transition: background 200ms;
+}
+
+.card__jump:hover .card__title--home{
+    color: #E5A3A3;
+    transition: color 200ms;
+}
+
+.card__jump:hover .card__title--goals{
+    color: #B4CC9F;
+    transition: color 200ms;
+}
+
+.card__jump:hover .card__title--todo{
+    color: #8FBBCC;
+    transition: color 200ms;
+}
+
+.card__jump:hover .card__title--timer{
+    color: #FFCD7B;
+    transition: color 200ms;
 }
 
 .card__jump:nth-child(1):hover .card__title--home{
 
+}
+
+.feature{
+    scroll-margin-top: 25px;
+}
+
+.feature:nth-child(-n + 4){
+    margin-bottom: 100px;
+}
+.feature__header{
+    margin-bottom: 25px;
+}
+
+.feature__title{
+    font-size: 3rem;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+.feature__body{
+    background: #eee;
+    border-radius: 20px;
+
+    padding: 50px 0;
+}
+
+.feature__sub{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.feature__img{
+    border-radius: 20px;
+}
+
+.feature__body--goal{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.feature__img--goal{
+    width: 20%;
+    box-shadow: 0px 0px 20px #ddd;
+}
+
+.btn--wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn{
+    padding: 20px 0px;
+    width: 80%;
+
+    border: solid 2px #B4CC9F;
+    border-radius: 20px;
+
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.14rem;
+    font-weight: 700;
+
+    background: #fff;
+    color: #B4CC9F;
+
+    transition: 200ms ease-in-out;
+}
+
+.btn:hover{
+    background: #B4CC9F;
+    color: #fff;
+
+    cursor: pointer;
+
+    transition: 200ms ease-in-out;
+}
+
+.footer{
+    background: #eee;
+    padding: 60px 0;
+}
+
+.footer__wrap{
+    width: 80%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__logo{
+    width: 40%;
+}
+
+.footer__right{
+    display: flex;
+    justify-content: space-between;
+
+    width: 60%;
+}
+
+
+.footer__head{
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 3rem;
+}
+
+.footer__txt{
+    line-height: 2rem;
+}
+
+.footer__link{
+    transition: 200ms;
+}
+
+.footer__link:hover{
+    opacity: 0.7;
+    transition: 200ms;
+}
+
+.top{
+    align-self: flex-end;
+}
+
+.top__link{
+    display: inline-block;
+    background: #fff;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    padding: 25px;
+    border-radius: 50px;
+
+    transition: 200ms ease-in-out;
+}
+
+.top__link:hover{
+    background: #222;
+    color: #fff;
+
+    transition: 200ms ease-in-out;
 }
