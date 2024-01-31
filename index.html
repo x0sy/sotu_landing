@@ -37,7 +37,7 @@
                         <h3 class="card__sub">ホーム</h3>
                     </header>
                     <div class="card__body">
-                        <p class="card__copy">一目で今日、今週、今月の進行状況が確認できるホーム画面。</p>
+                        <p class="card__copy">全てがココからスタート。一目で今日、今週、今月の進行状況が確認できるホーム画面。</p>
                     </div>
                     <footer class="card__footer home">Learn more &rarr;</footer>
                 </article>
@@ -74,7 +74,7 @@
                         <h3 class="card__sub ">タイマー</h3>
                     </header>
                     <div class="card__body">
-                        <p class="card__copy">Todoにより集中できるようなタイマー。プリセットの機能で色々なフローに安く入る。</p>
+                        <p class="card__copy">やるべきことに集中できるようなタイマー。</p>
                     </div>
                     <footer class="card__footer timer">Learn more &rarr;</footer>
                 </article>
@@ -82,11 +82,14 @@
         </div>
         <div class="feature" id="home">
             <header class="feature__header">
-                <h2 class="feature__title ">Home</h2>
+                <h2 class="feature__title home">Home</h2>
             </header>
-            <div class="feature__body">
-                <img src="" alt="" class="feature__img">
-                <p class="feature__copy">adsffdas</p>
+            <div class="feature__body feature__body--home">
+                <div class="feature__txt--wrap">
+                    <p class="feature__sub home">いつでも、どこでも、イマまでの調子が迅速を確認。</p>
+                    <p class="feature__txt">解りやすいインフォグラフィックでデータが表示されます。</p>
+                </div>
+                <img src="images/nobezel/m.homev2.png" alt="" class="feature__img feature__img--home">
             </div>
         </div>
         <div class="feature" id="goals">
@@ -106,29 +109,38 @@
                        <p class="btn__txt">ゴール作成が完成</p>
                    </button>
                </div>
-                <img src="images/nobezel/m.goal%20%20make12x.png" alt="" class="feature__img feature__img--goal" id="figure">
+                <img src="images/nobezel/m.goal%20%20make12x.png" alt="" class="feature__img feature__img--goals" id="figure">
             </div>
         </div>
-        <div class="feature" id="todo">
-            <header class="feature__header">
-                <h2 class="feature__title">Todo</h2>
-            </header>
-            <div class="feature__body">
-                <img src="" alt="" class="feature__img">
-                <p class="feature__copy"></p>
+        <div class="feature--wrap">
+            <div class="feature" id="todo">
+                <header class="feature__header">
+                    <h2 class="feature__title todo">Todo</h2>
+                </header>
+                <div class="feature__body feature__body--double">
+                    <p class="feature__copy">Todo（タスク）が予定日順で並んでいます。ゴールに追加、サブタスクの作成といったオプションもあります。</p>
+                    <img src="images/nobezel/m.todo2x.png" alt="" class="feature__img">
+                    <img src="images/nobezel/todo%202%20v2.png" alt="" class="feature__img">
+                </div>
             </div>
-        </div>
-        <div class="feature" id="timer">
-            <header class="feature__header">
-                <h2 class="feature__title">Timer</h2>
-            </header>
-            <div class="feature__body">
-                <img src="" alt="" class="feature__img">
-                <p class="feature__copy"></p>
+            <div class="feature" id="timer">
+                <header class="feature__header">
+                    <h2 class="feature__title timer">Timer</h2>
+                </header>
+                <div class="feature__body feature__body--double">
+                    <p class="feature__copy">Todoにより集中できるようなタイマー。プリセットの機能で色々なフローに入れる。</p>
+                    <img src="images/nobezel/m.timer2x.png" alt="" class="feature__img">
+                    <img src="images/nobezel/m.timer%20settings2x.png" alt="" class="feature__img">
+                </div>
             </div>
         </div>
     </main>
-    div.prefoot>h1.prefoot__header
+    <div class="prefoot">
+        <h1 class="prefoot__header">「イマ」を取り戻す</h1>
+        <a href="#fix" class="prefoot__link">
+            <button class="prefoot__btn">Life Modeを無料で使ってみる</button>
+        </a>
+    </div>
     <footer class="footer">
         <div class="footer__wrap">
             <div class="footer__left">
@@ -141,13 +153,13 @@
                         <h3 class="footer__head">Product</h3>
                     </li>
                     <li class="footer__item">
-                            <p class="footer__txt"><a href="" class="footer__link">最新情報</a></p>
+                            <p class="footer__txt"><a href="#fix" class="footer__link">最新情報</a></p>
                         </li>
                     <li class="footer__item">
-                            <p class="footer__txt"><a href="" class="footer__link">ブログ</a></p>
+                            <p class="footer__txt"><a href="#fix" class="footer__link">ブログ</a></p>
                         </li>
                     <li class="footer__item">
-                            <p class="footer__txt"><a href="" class="footer__link">カレンダー</a></p>
+                            <p class="footer__txt"><a href="#fix" class="footer__link">カレンダー</a></p>
                         </li>
                 </ul>
                 <ul class="footer__list">
@@ -155,13 +167,13 @@
                         <h3 class="footer__head">Download</h3>
                     </li>
                     <li class="footer__item">
-                            <p class="footer__txt"><a href="" class="footer__link">iOS</a></p>
+                            <p class="footer__txt"><a href="#fix" class="footer__link">iOS</a></p>
                         </li>
                     <li class="footer__item">
-                            <p class="footer__txt"><a href="" class="footer__link">macOS</a></p>
+                            <p class="footer__txt"><a href="#fix" class="footer__link">macOS</a></p>
                         </li>
                     <li class="footer__item">
-                            <p class="footer__txt"><a href="" class="footer__link">Windows</a></p>
+                            <p class="footer__txt"><a href="#fix" class="footer__link">Windows</a></p>
                         </li>
                 </ul>
                 <ul class="footer__list">
@@ -169,13 +181,13 @@
                         <h3 class="footer__head">Resources</h3>
                     </li>
                     <li class="footer__item">
-                            <p class="footer__txt"><a href="" class="footer__link">Life Modeについて</a></p>
+                            <p class="footer__txt"><a href="#fix" class="footer__link">Life Modeについて</a></p>
                         </li>
                     <li class="footer__item">
-                            <p class="footer__txt"><a href="" class="footer__link">お問い合わせ</a></p>
+                            <p class="footer__txt"><a href="#fix" class="footer__link">お問い合わせ</a></p>
                         </li>
                     <li class="footer__item">
-                            <p class="footer__txt"><a href="" class="footer__link">使用規約</a></p>
+                            <p class="footer__txt"><a href="#fix" class="footer__link">使用規約</a></p>
                         </li>
                 </ul>
                 <div class="top">

@@ -258,7 +258,7 @@ body{
     scroll-margin-top: 25px;
 }
 
-.feature:nth-child(-n + 4){
+.feature{
     margin-bottom: 100px;
 }
 .feature__header{
@@ -273,10 +273,12 @@ body{
 }
 
 .feature__body{
+/*
     background: #eee;
     border-radius: 20px;
+*/
 
-    padding: 50px 0;
+    padding-top: 50px;
 }
 
 .feature__sub{
@@ -286,16 +288,34 @@ body{
 
 .feature__img{
     border-radius: 20px;
+    box-shadow: 0px 0px 20px #ddd;
+}
+
+.feature__img--home, .feature__img--goals{
+    width: 20%;
+}
+
+.feature__txt{
+    font-size: 1.3rem;
+}
+
+.feature__body--home{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.feature__txt--wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    line-height: 4rem;
 }
 
 .feature__body--goal{
     display: flex;
     justify-content: space-evenly;
-}
-
-.feature__img--goal{
-    width: 20%;
-    box-shadow: 0px 0px 20px #ddd;
 }
 
 .btn--wrap{
@@ -331,6 +351,68 @@ body{
     transition: 200ms ease-in-out;
 }
 
+.feature--wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature--wrap .feature{
+    width: 45%;
+}
+
+.feature__body--double{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.feature__body--double .feature__copy{
+    width: 100%;
+
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.feature__body--double .feature__img{
+    width: 40%;
+}
+
+.prefoot{
+    margin: -100px 0 100px 0;
+    text-align: center;
+}
+
+.prefoot__header{
+    font-size: 3rem;
+    font-weight: 700;
+
+    margin-bottom: 50px;
+}
+
+.prefoot__btn{
+    color: #fff;
+    background: #222;
+    border: 1px solid transparent;
+
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 20px;
+
+    transition: 200ms ease-in-out;
+}
+
+.prefoot__btn:hover{
+    cursor: pointer;
+
+    background: #fff;
+    color: #222;
+    border: 1px solid #222;
+
+    transition: 200ms ease-in-out;
+}
+
 .footer{
     background: #eee;
     padding: 60px 0;
@@ -360,7 +442,6 @@ body{
 
     width: 60%;
 }
-
 
 .footer__head{
     font-weight: 700;
