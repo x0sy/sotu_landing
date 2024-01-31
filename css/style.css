@@ -9,6 +9,9 @@ app colors
 #B4CC9F
 #8FBBCC
 #FFCD7B
+
+bg
+#A3BCE2
 */
 
 html{
@@ -26,19 +29,111 @@ a{
     text-decoration: none;
 }
 
+body{
+/*    background: linear-gradient(#A3BCE2 0% 100vh, transparent 100vh 100%);*/
+}
+
 .mvis{
-/*    height: 100vh;*/
+    display: flex;
+    justify-content: space-between;
+
+    height: 100vh;
+    width: 90%;
+
+    margin: 0 auto;
+}
+
+.mvis__left{
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 50%;
+}
+
+.mvis__head{
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
+
+    height: 10%;
+}
+
+.mvis__img--wrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+    height: 20%;
+}
+
+.mvis__img--icon{
+    width: 20%;
+
+    box-shadow: 1px 1px 10px #ddd;
+    border-radius: 20px;
+}
+
+.mvis__img--logo{
+    width: 50%;
+}
+
+.mvis__link--wrap{
+    width: 25%;
+    height: 20%;
+}
+
+.mvis__link{
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mvis__img--ios{
+    width: 100%;
+    height: 100%;
+}
+
+.mvis__right{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+    width: 50%;
+}
+
+.mvis__img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.mvis__img--phone{
+
+}
+
+.mvis__img--phone:nth-child(1){
+    width: 50%;
+}
+
+.mvis__img--phone:nth-child(2){
+    width: 45%;
 }
 
 .mcon{
-    margin: auto;
+    margin: 100px auto;
     width: 80%;
 }
 
 .card--wrap{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
+    margin-bottom: 100px;
 }
 
 .card__jump{
