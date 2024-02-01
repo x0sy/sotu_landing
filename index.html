@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="wrap">
-    <div class="mvis">
+    <div class="mvis hide">
         <div class="mvis__left">
             <h1 class="mvis__head">for when <span class="hilite">life</span> needs <span class="hilite">you</span></h1>
             <div class="mvis__img--wrap">
@@ -29,11 +29,12 @@
         </div>
     </div>
     <main class="mcon">
-        <div class="card--wrap">
+        <div class="card--wrap hide">
+            <h2 class="card__head">機能紹介</h2>
             <a href="#home" class="card__jump">
                <article class="card">
                     <header class="card__header">
-                        <h2 class="card__title card__title--home">home</h2>
+                        <h2 class="card__title card__title--home">Home</h2>
                         <h3 class="card__sub">ホーム</h3>
                     </header>
                     <div class="card__body">
@@ -45,7 +46,7 @@
             <a href="#goals" class="card__jump">
                <article class="card">
                     <header class="card__header">
-                        <h2 class="card__title card__title--goals">goals</h2>
+                        <h2 class="card__title card__title--goals">Goals</h2>
                         <h3 class="card__sub">ゴール</h3>
                     </header>
                     <div class="card__body">
@@ -58,7 +59,7 @@
             <a href="#todo" class="card__jump">
                <article class="card">
                     <header class="card__header">
-                        <h2 class="card__title card__title--todo">todo</h2>
+                        <h2 class="card__title card__title--todo">Todo</h2>
                         <h3 class="card__sub">タスク</h3>
                     </header>
                     <div class="card__body">
@@ -70,7 +71,7 @@
             <a href="#timer" class="card__jump">
                <article class="card">
                     <header class="card__header">
-                        <h2 class="card__title card__title--timer">timer</h2>
+                        <h2 class="card__title card__title--timer">Timer</h2>
                         <h3 class="card__sub ">タイマー</h3>
                     </header>
                     <div class="card__body">
@@ -135,7 +136,7 @@
             </div>
         </div>
     </main>
-    <div class="prefoot">
+    <div class="prefoot hide">
         <h1 class="prefoot__header">「イマ」を取り戻す</h1>
         <a href="#fix" class="prefoot__link">
             <button class="prefoot__btn">Life Modeを無料で使ってみる</button>
@@ -216,21 +217,23 @@
         fig.src="images/nobezel/m.goal%20make22x-1.png";
     });
 </script>
-<!--
-BOARD TXT
-今日から自分のライフを取り戻す。「イマ」と「ヤリタイコト」を中心にした自己管理アプリ。Todo（タスク）、ゴール設定、タイマーといった不可欠な機能を完備しています。
 
-GOAL
-達成したゴール数が確認でき、モチベーションアップ！
-ゴール作成その１。ゴール自体と予定日を設定。
-ゴール作成その２。ゴールにTodo（タスク）を追加。
-ゴール作成その３。ゴール作成が完成。
+<!--lazy loading-->
+<script>
+    const hider = document.querySelectorAll(".hide")
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            entry.target.classList.toggle("show", entry.isIntersecting)
+            if (entry.isIntersecting){
+                observer.unobserve(entry.target)
+            }
+        })
+    },  {threshold: 0.3})
 
-TOOD
-Todo（タスク）が予定日順で並んでいます。ゴールに追加、サブタスクの作成といったオプションもあります。
-
-TIMER
-Todo（タスク）に集中できるようなタイマー。設定画面でタイマー終了時のサウンドとプリセットが変更できます。
--->
+//        observer.observe(document.querySelectorAll(".hide"))
+    hider.forEach(hide => {
+        observer.observe(hide)
+    })
+</script>
 </body>
 </html>
